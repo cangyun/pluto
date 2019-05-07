@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="http://118.24.105.129/wp-content/themes/pluto/static/images/git-shields/git-screenshot.png" alt="PLUTO" />
+    <img src="http://118.24.105.129/wp-content/themes/pluto/static/images/git-shields/screenshot.png" alt="PLUTO" />
 </p>
 
 <p align="center">
