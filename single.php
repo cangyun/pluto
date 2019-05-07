@@ -1,7 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: pc
- * Date: 2019/4/29
- * Time: 14:37
- */
+<?php get_header(); ?>
+    <div id="page">
+        <div class="container">
+            <?php get_template_part('/inc/single-templates/single', get_post_format()); ?>
+        </div>
+    </div>
+<?php get_footer(); ?>

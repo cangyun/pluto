@@ -66,7 +66,7 @@ endif;
  * Not in a class to support backwards compatibility in themes.
  */
 if ( ! function_exists( 'of_get_option' ) ) :
-function of_get_option( $name, $default = false ) {
+function pluto_option( $name, $default = false ) {
 
 	$option_name = '';
 

@@ -1,0 +1,582 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 General style
+2.0 Header style
+3.0 Page style
+4.0 Posts style
+5.0 Pagination style
+6.0 Footer style
+7.0 Single
+8.0 Navigation
+9.0 Comments
+10.0 QuickTags
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 General style
+--------------------------------------------------------------*/
+/* 更改复制选中文字的颜色 */
+::selection {
+    background: rgba(0, 149, 255, .2);
+}
+
+body {
+    color: #606975;
+    font-family: 'Josefin Sans Light', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "'Hiragino Sans GB", STHeiti, "Microsoft Yahei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, Verdana, sans-serif;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    cursor: url("../images/cursor/start.cur"), default;
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: 0.025rem;
+    line-height: 1.25;
+}
+
+a {
+    transition: all .5s;
+}
+
+a:hover, button, input[type=button], input[type=reset], input[type=submit], .xHeading {
+    text-decoration: none;
+    cursor: url("../images/cursor/help.cur"), pointer !important;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.visible-sm, .visible-md, .visible-lg, .visible-xl {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .visible-sm {
+        display: block !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .visible-md {
+        display: block !important;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .visible-lg {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1201px) {
+    .visible-xl {
+        display: block !important;
+    }
+}
+
+/*--------------------------------------------------------------
+2.0 Header style
+--------------------------------------------------------------*/
+header {
+    background: rgba(66, 64, 64, .2);
+    padding-bottom: 1px;
+}
+#logo {
+    display: inline-block;
+    margin: 30px 0 15px 0;
+    width: 310px;
+}
+svg.text {
+    display: inline;
+    opacity: 1;
+    width: auto;
+    transition: .5s;
+}
+svg.animation {
+    display: inline;
+    opacity: 0;
+    width: 0;
+    transition: .5s;
+}
+#logo:hover svg.animation {
+    opacity: 1;
+    width: auto;
+}
+#logo:hover svg.text {
+    opacity: 0;
+    width: 0;
+}
+
+/*--------------------------------------------------------------
+3.0 Page style
+--------------------------------------------------------------*/
+#page {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+/*--------------------------------------------------------------
+4.0 Posts style
+--------------------------------------------------------------*/
+article a {
+    color: #333;
+}
+.pluto-card {
+    margin-bottom: 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.pluto-card-title {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+.pluto-card:hover {
+    box-shadow: 0 8px 15px rgba(146, 146, 146, .8);
+}
+
+.pluto-thumb-new {
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    height: 145px;
+    width: 240px;
+}
+
+.pluto-thumb-new img {
+    padding: 2px;
+    border: 1px solid #f3f3f3;
+    height: 145px;
+    width: 240px;
+}
+
+.pluto-header-new {
+    margin: 3px 0 6px;
+}
+
+.pluto-header-new .label {
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+    background: #51aded;
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    top: -3px;
+}
+
+.pluto-header-new .label:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    content: "";
+    top: 8px;
+    right: -3px;
+    border-left: 4px solid #51aded;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.pluto-inner-new {
+    padding: 21px 20px 0 3px;
+    height: 168px;
+    overflow: hidden;
+}
+.pluto-title-new {
+    margin: 0;
+    font-size: 21px;
+    display: inline;
+}
+.pluto-entry-content-new p {
+    font-size: 15px;
+}
+.pluto-meta-new {
+    border-top: 1px solid #f3f3f3;
+    overflow: hidden;
+    padding: 3px 20px;
+    line-height: 25px;
+    font-size: 12px;
+    background: rgba(253, 253, 253, 0.7);
+}
+
+.pluto-meta-new a {
+    margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+    .pluto-thumb-new {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .pluto-thumb-new img {
+        height: auto;
+        max-width: 100%;
+        width: 750px;
+        padding: 0;
+        border: 0;
+    }
+    .pluto-header-new .label {
+        display: none;
+    }
+    .pluto-inner-new {
+        padding: 0 15px;
+        height: auto;
+    }
+    .pluto-meta-new {
+        padding: 3px 15px;
+    }
+}
+/*--------------------------------------------------------------
+5.0 Pagination style
+--------------------------------------------------------------*/
+.pagination {
+    display: inline-block;
+    margin: 23px 0 7px;
+}
+
+.pagination > li {
+    display: inline;
+}
+
+.pagination > li:first-child > a {
+    margin-left: 0;
+}
+
+.pagination > li > a {
+    padding: 6px 12px;
+    line-height: 1.4;
+    margin-left: 6px;
+    min-width: 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    color: #626262;
+    transition: all .5s;
+}
+
+.pagination > .active > a,.pagination > li > a:focus, .pagination > li > a:hover {
+    color: #fff;
+    background-color: #51aded;
+}
+/*--------------------------------------------------------------
+6.0 Footer style
+--------------------------------------------------------------*/
+footer {
+    background: rgba(35,40,45,1);
+    padding: 40px 0 10px;
+}
+.helper-tool > div {
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+}
+.helper-tool > div:hover {
+    cursor: url("../images/cursor/help.cur"), pointer;
+}
+.helper-tool i {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
+.gotop-box {
+    bottom: 80px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+.gotop-box.active {
+    visibility: visible;
+    opacity: .7;
+}
+.gotop-box i {
+    background-color: #848484;
+}
+.search-box {
+    bottom: 30px;
+    background-color: #848484;
+    opacity: .7;
+    display: table;
+}
+.search-box .search-form {
+    width: 0;
+    transition: all .5s;
+}
+.search-box input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: 0 0;
+    color: #fff;
+    font-size: 17px;
+}
+.search-box input::placeholder {
+    color: #fff;
+}
+.search-box.active .search-form {
+    width: 200px;
+}
+footer p {
+    color: rgba(255, 255, 255, .3);
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+footer p a {
+    color: rgba(255, 255, 255, .5);
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    pointer-events: none;
+    background: rgba(225, 225, 225, .1);
+}
+/*--------------------------------------------------------------
+7.0 Single style
+--------------------------------------------------------------*/
+.pluto-title-single {
+    font-size: 30px;
+    margin: 0 0 15px;
+}
+.pluto-single {
+    padding: 25px 10px 18px 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+.pluto-meta-single i:not(:first-child) {
+    margin-left: 12px;
+}
+.pluto-meta-single span {
+    font-size: 13px;
+    color: #777;
+}
+.pluto-content-single {
+    word-wrap: break-word;
+    margin: 10px;
+}
+.pluto-copyright-single {
+    background-color: rgba(220, 220, 220, .7);
+    margin: 25px 0 0;
+    display: flow-root;
+}
+.pluto-copyright-single h5 {
+    margin: 15px;
+    color: #666;
+    font-size: 13px;
+    font-weight: 300;
+}
+.pluto-footer-single {
+    color: #9d9d9d;
+    margin: 10px;
+}
+.pluto-footer-single a {
+    font-size: 12px;
+    line-height: 13px;
+    margin: 0 0 2px 5px;
+    padding: 3px 7px;
+    color: #fff !important;
+    background-color: #aaa;
+}
+.pluto-footer-single a:hover {
+    background: #8d8d8d;
+}
+.pluto-footer-date-single {
+    font-size: 14px;
+    margin-top: 5px;
+}
+/*--------------------------------------------------------------
+8.0 Navigation style
+--------------------------------------------------------------*/
+.pluto-navigation {
+    margin-top: 15px;
+}
+.pluto-navigation .nav-previous {
+    float: left;
+    white-space: nowrap;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    padding: 7px 18px;
+}
+.pluto-navigation .nav-next {
+    float: right;
+    white-space: nowrap;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    padding: 7px 18px;
+}
+/*--------------------------------------------------------------
+9.0 Comments style
+--------------------------------------------------------------*/
+#comments ol {
+    margin-top: 15px;
+    list-style: none;
+    margin-left: -40px;
+}
+#comments ol li {
+    border: 2px solid #eee;
+    padding: 17px 17px 14px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+.comments-nav {
+    text-align: center;
+    margin: 0 0 15px;
+}
+.comments-nav a {
+    margin: 0 4px;
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    color: #777;
+}
+.comments-form {
+    margin-bottom: 15px;
+}
+.comments-form .input-group {
+    width: 100%;
+}
+.comments-form .form-control {
+    background: url("../images/comment.png") right bottom no-repeat;
+}
+#comments .btn {
+    width: 100%;
+}
+#reply-title {
+    font-size: 20px;
+    color: #666;
+    margin-top: 5px;
+}
+.logged-in-as {
+    margin: 0 0 10px;
+    color: #888;
+}
+#respond {
+    background: #fff;
+    padding: 20px 20px 8px 20px;
+    margin-top: 15px;
+}
+#comments .avatar {
+    position: absolute;
+    margin-top: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0.125rem 1.0625rem 0 rgba(0, 0, 0, .22);
+}
+cite {
+    font-style: normal;
+}
+#comments .fn, #comments .comment-meta {
+    margin-left: 63px;
+}
+#comments .fn:after {
+    margin-left: 6px;
+    padding: 1.5px 4px;
+    border-radius: 2px;
+    background: #00a4ff;
+    color: #fff;
+    content: "作者";
+    font-size: 11px;
+}
+#comments .says {
+    display: none;
+}
+.comment-meta {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #777;
+    font-size: 13px;
+}
+.commentmetadata a {
+    color: #848484;
+}
+.comment-body p {
+    color: #333;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+#comments .reply {
+    text-align: right;
+}
+a.comment-reply-link {
+    padding: 2px 5px;
+    background-color: #999;
+    color: #fff;
+    font-size: 12px;
+    transition: all .5s;
+}
+a.comment-reply-link:hover {
+    background-color: #666;
+}
+.comment-form-author input,.comment-form-email input,.comment-form-url input {
+    width: 100%;
+}
+/*--------------------------------------------------------------
+10.0 QuickTags style
+--------------------------------------------------------------*/
+.content-title {
+    margin: 15px -20px;
+    padding: 0 20px;
+    border-left: 5px solid #51aded;
+    background-color: rgba(243, 243, 243, .7);
+    font-size: 22px;
+    line-height: 40px;
+}
+.xControl {
+    position: relative;
+    margin-bottom: 15px;
+    background: rgba(243, 243, 243, .7);
+}
+.xHeading {
+    position: relative;
+    padding: 10px 30px 10px 10px;
+}
+.xControl.active .xIcon {
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.xHeading .xIcon {
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    font-size: 20px;
+}
+.xHeading h5 {
+    margin: 0;
+    font-size: 16px;
+}
+.xContent {
+    display: none;
+    border-top: 1px solid #e6e6e6;
+}
+.xContent .inner {
+    padding: 5px 15px;
+    color: #333;
+}
+.alert-danger {
+    border-color: rgba(225, 85, 84, .85);
+    background-color: rgba(225, 85, 84, .85);
+    color: #fff;
+}
