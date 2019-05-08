@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-    <a href="http://118.24.105.129/"><img src="http://118.24.105.129/wp-content/themes/pluto/static/images/git-shields/author-cangyun-blue.svg" alt="Author" /></a>
-    <a href="https://github.com/cangyun/pluto/releases"><img src="http://118.24.105.129/wp-content/themes/pluto/static/images/git-shields/version-0.1-yellow.svg" /></a>
-    <a href="https://www.gnu.org/licenses/"><img src="http://118.24.105.129/wp-content/themes/pluto/static/images/git-shields/license-GNU-red.svg" /></a>
+    <a href="http://118.24.105.129/"><img src="https://img.shields.io/badge/author-cangyun-blue.svg" alt="Author" /></a>
+    <a href="https://github.com/cangyun/pluto/releases"><img src="https://img.shields.io/badge/version-0.1.1-yellowgreen.svg" /></a>
+    <a href="https://www.gnu.org/licenses/"><img src="https://img.shields.io/badge/license-GNU-red.svg" /></a>
 </p>
 
 > :tada: is a WordPress theme
