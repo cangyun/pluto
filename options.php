@@ -27,6 +27,19 @@ function optionsframework_options() {
 	    'type' => 'heading',
     );
 
+	$options[] = array(
+	    'name' => __('组件配置', 'cangyun'),
+        'type' => 'heading',
+    );
+
+	$options[] = array(
+	    'name' => __('Live2d', 'cangyun'),
+        'desc' => __('是否启用Live2d', 'cangyun'),
+        'id' => 'live2d',
+        'std' => '1',
+        'type' => 'checkbox',
+    );
+
     $options[] = array(
         'name' => __('文章设置', 'cangyun'),
         'type' => 'heading',

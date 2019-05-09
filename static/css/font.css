@@ -1,4 +1,8 @@
 @font-face {
-    src: url("../fonts/Makinas-Scrap-5.otf");
+    src: url("../fonts/Makinas-Scrap-5.woff2"),
+         url("../fonts/Makinas-Scrap-5.woff"),
+         url("../fonts/Makinas-Scrap-5.otf"),
+         url("../fonts/Makinas-Scrap-5.eot"),
+         url("../fonts/Makinas-Scrap-5.ttf");
     font-family: "Makinas-Scrap-5";
 }

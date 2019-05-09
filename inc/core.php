@@ -65,6 +65,15 @@ function pluto_theme_scripts()
     wp_enqueue_style("font", $url . "/static/css/font.css", array(), PLUTO_VERSION);
     wp_enqueue_script("jquery", $url . "/static/js/jquery-3.4.1.min.js", array(), "3.4.1");
     wp_enqueue_script("pluto", $url . "/static/js/pluto.js", array(), PLUTO_VERSION);
+    if (pluto_option("live2d") && !wp_is_mobile()) {
+        wp_enqueue_script("live2d", $url . "/static/js/live2d.js", array(), "12d");
+        wp_enqueue_script("live2d-message", $url . "/static/js/message.js", array(), PLUTO_VERSION);
+        wp_enqueue_style("live2d", $url . "/static/css/live2d.css", array(), PLUTO_VERSION);
+    }
+    $local = array(
+        "url" => get_stylesheet_directory_uri(),
+    );
+    wp_localize_script("pluto", "pluto", $local);
 }
 
 add_action("wp_enqueue_scripts", "pluto_theme_scripts");
@@ -72,9 +81,11 @@ add_action("wp_enqueue_scripts", "pluto_theme_scripts");
 /*
  * deregister default jquery
  */
-function pluto_deregister_jquery() {
+function pluto_deregister_jquery()
+{
     wp_deregister_script("jquery");
 }
+
 add_action("wp_enqueue_scripts", "pluto_deregister_jquery", 1);
 
 /*
@@ -112,7 +123,8 @@ add_filter("excerpt_more", "pluto_excerpt_more");
 /*
  * home title
  */
-function pluto_wp_title($title, $sep) {
+function pluto_wp_title($title, $sep)
+{
     global $paged;
     $title .= get_bloginfo('name');
     $site_description = get_bloginfo('description', 'display');
@@ -120,12 +132,14 @@ function pluto_wp_title($title, $sep) {
     if ($paged >= 2) $title = "$title $sep" . sprintf("Page %s", $paged);
     return $title;
 }
+
 add_filter("wp_title", "pluto_wp_title", 10, 2);
 
 /*
  * redirect to theme_options when theme is tured on
  */
-function pluto_load_themes() {
+function pluto_load_themes()
+{
     global $pagenow;
     if ('themes.php' == $pagenow && isset($_GET['activated'])) {
         // 跳转到设置界面
@@ -133,4 +147,5 @@ function pluto_load_themes() {
         exit;
     }
 }
+
 add_action("load-themes.php", "pluto_load_themes");

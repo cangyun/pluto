@@ -35,7 +35,7 @@ function pluto_thumbnail_new() {
 //        if (!empty($img_url)) {
 //            echo '<a href="'.get_permalink() .'"><img src="'.$img_url .'"></a>';
 //        } else {
-            $random = mt_rand(1,20);
+            $random = mt_rand(1,31);
             echo '<a href="'. get_permalink() .'"><img src="'. get_bloginfo('template_url') .'/static/images/thumb/thumb_'. $random .'.jpg"></a>';
 //        }
     }

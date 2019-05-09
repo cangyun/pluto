@@ -133,7 +133,7 @@
 <header>
     <div class="container">
         <a href="<?php echo get_bloginfo("siteurl"); ?>" id="logo">
-            <svg class="animation" height="60" xmlns="http://www.w3.org/2000/svg">
+            <svg class="animation" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <text stroke-dasharray="90 310" stroke-width="2px" text-shadow="0 0 1px #3498db" stroke="#3498db"
                       fill="none" text-transform="uppercase" y="85%" x="30%" text-anchor="middle"
                       font-family="Makinas-Scrap-5" font-size="60">

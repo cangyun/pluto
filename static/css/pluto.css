@@ -233,11 +233,14 @@ article a {
         display: none;
     }
     .pluto-inner-new {
-        padding: 0 15px;
+        padding: 0 10px;
         height: auto;
     }
     .pluto-meta-new {
-        padding: 3px 15px;
+        padding: 3px 10px;
+    }
+    .pluto-meta-new a {
+        margin-right: 10px;
     }
 }
 /*--------------------------------------------------------------
