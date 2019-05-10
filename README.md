@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="http://118.24.105.129/"><img src="https://img.shields.io/badge/author-cangyun-blue.svg" alt="Author" /></a>
-    <a href="https://github.com/cangyun/pluto/releases"><img src="https://img.shields.io/badge/version-0.1.1-yellowgreen.svg" /></a>
+    <a href="https://github.com/cangyun/pluto/releases"><img src="https://img.shields.io/badge/version-0.1.2-yellowgreen.svg" /></a>
     <a href="https://www.gnu.org/licenses/"><img src="https://img.shields.io/badge/license-GNU-red.svg" /></a>
 </p>
 
@@ -28,6 +28,7 @@
 - [Bootstrap](https://github.com/twbs/bootstrap)
 - [Font awesome](https://github.com/FortAwesome/Font-Awesome)
 - [options-framework-theme](https://github.com/devinsays/options-framework-theme)
+- [NProgress](https://github.com/rstacruz/nprogress/)
 
 ## License
 

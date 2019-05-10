@@ -65,6 +65,7 @@ function pluto_theme_scripts()
     wp_enqueue_style("font", $url . "/static/css/font.css", array(), PLUTO_VERSION);
     wp_enqueue_script("jquery", $url . "/static/js/jquery-3.4.1.min.js", array(), "3.4.1");
     wp_enqueue_script("pluto", $url . "/static/js/pluto.js", array(), PLUTO_VERSION);
+    wp_enqueue_script("ajax", $url . "/static/js/ajax.js", array(), PLUTO_VERSION);
     if (pluto_option("live2d") && !wp_is_mobile()) {
         wp_enqueue_script("live2d", $url . "/static/js/live2d.js", array(), "12d");
         wp_enqueue_script("live2d-message", $url . "/static/js/message.js", array(), PLUTO_VERSION);
