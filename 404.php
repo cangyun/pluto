@@ -794,7 +794,7 @@
                 <p class="panel-cover__description">对不起，您要找的页面被小萌丢失了，(＞人＜；)</p>
                 <hr class="panel-cover__divider panel-cover__divider--secondary">
 
-                <p class="panel-cover__description">欢迎来到我的个人世界!</p>
+                <p class="panel-cover__description">欢迎来到cangyun的博客!</p>
 
 
                 <p class="footer">© <?php echo date("Y"); ?><a
