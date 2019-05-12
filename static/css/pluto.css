@@ -478,6 +478,7 @@ footer p a {
     background: #fff;
     padding: 20px 20px 8px 20px;
     margin-top: 15px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
 }
 #comments .avatar {
     position: absolute;
@@ -534,6 +535,12 @@ a.comment-reply-link:hover {
 }
 .comment-form-author input,.comment-form-email input,.comment-form-url input {
     width: 100%;
+}
+.comment-list li:not(:first-child) {
+    margin-top: 15px;
+}
+.comment-list .children li {
+    background-color: #fffdf1 !important;
 }
 /*--------------------------------------------------------------
 10.0 QuickTags style

@@ -53,6 +53,18 @@ function optionsframework_options() {
         'type' => 'checkbox',
     );
 
+    $options[] = array(
+        'name' => __('注册界面设置', 'cangyun'),
+        'type' => 'heading'
+    );
+
+    $options[] = array(
+        'name'=>__('注册登录页面背景','cangyun'),
+        'desc'=>__('上传页面背景','cangyun'),
+        'id'=>'login_back',
+        'type'=>'upload',
+    );
+
 	$options[] = array(
 	    'name' => __('雪花设置', 'cangyun'),
 	    'type' => 'heading',

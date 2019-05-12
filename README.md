@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="http://118.24.105.129/"><img src="https://img.shields.io/badge/author-cangyun-blue.svg" alt="Author" /></a>
-    <a href="https://github.com/cangyun/pluto/releases"><img src="https://img.shields.io/badge/version-0.1.2-yellowgreen.svg" /></a>
+    <a href="https://github.com/cangyun/pluto/releases"><img src="https://img.shields.io/badge/version-0.1.3-yellowgreen.svg" /></a>
     <a href="https://www.gnu.org/licenses/"><img src="https://img.shields.io/badge/license-GNU-red.svg" /></a>
 </p>
 
