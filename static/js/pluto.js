@@ -40,3 +40,49 @@ window.addEventListener("load", function () {
     var cssbiz = "background: url('data:image/svg+xml;base64," + svgbiz + "') left top no-repeat; color: red; font-size: 260px;";
     console.log('%c     ', cssbiz);
 });
+
+let addComment = {
+    moveForm: function ($comm, commID, $respond) {
+        let comm = $("#" + $comm), respond = $("#" + $respond),cancel = $("#cancel-comment-reply-link"),commList = $(".comment-list"), commField = $("#comment_parent");
+        respond.insertAfter(comm);
+        cancel[0].style.display = '';
+        commField.val(commID);
+        cancel.click(function () {
+            commField.val("0");
+            respond.insertAfter(commList);
+            this.style.display = 'none';
+            this.onclick = null;
+        });
+        $("[name=comment]")[0].focus();
+    }
+};
+$(document).ready(function () {
+    $(document).on("submit", "#commentform", function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: pluto.ajax_url,
+            data: $("#commentform").serialize() + "&action=comment",
+            type: "POST",
+            beforeSend: function () {
+                layer.msg("正在提交");
+            },
+            error: function (xhr, status, errorThrown) {
+                layer.msg(xhr.responseText);
+            },
+            success: function (data) {
+                $("[name=comment]").val("");
+                let f = $("#comment_parent").val(), respond = $("#respond"), cancel = $("#cancel-comment-reply-link");
+                if (f) {
+                    respond.before(`<ol class="children">${data}</ol>`);
+                } else {
+                    $(".comment-list").append(data);
+                }
+                layer.msg("提交成功");
+                cancel[0].style.display = 'none';
+                cancel[0].onclick = null;
+                $("#comment_parent").val("0");
+                respond.insertAfter($(".comment-list"));
+            }
+        });
+    });
+});

@@ -1,4 +1,4 @@
-let ignore = ["/wp-"];
+let ignore = ["/wp-","#respond"];
 
 $(document).on("click", "a[target!=_blank]", function (e) {
     let href = $(this).attr("href");

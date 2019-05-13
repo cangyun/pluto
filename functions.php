@@ -5,3 +5,4 @@ require_once(get_template_directory() . '/inc/core.php');
 require_once(get_template_directory() . '/inc/post.php');
 require_once(get_template_directory() . '/inc/shortcode.php');
 require_once(get_template_directory() . '/inc/login.php');
+require_once(get_template_directory() . '/inc/comments.php');
