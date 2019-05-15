@@ -298,10 +298,15 @@ footer {
     font-size: 18px;
 }
 .gotop-box {
-    bottom: 80px;
+    bottom: 130px;
     visibility: hidden;
     opacity: 0;
     transition: all .5s;
+}
+.home-box {
+    bottom: 80px;
+    opacity: .7;
+    background-color: #848484;
 }
 .gotop-box.active {
     visibility: visible;

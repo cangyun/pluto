@@ -3,6 +3,9 @@
         <div class="gotop-box">
             <i class="fa fa-chevron-up"></i>
         </div>
+        <div class="home-box">
+            <a href="<?php echo get_bloginfo("siteurl"); ?>"><i class="fa fa-home"></i></a>
+        </div>
         <div class="search-box">
             <i class="fa fa-search"></i>
             <form action="<?php echo home_url("/"); ?>" id="searchform" method="get" class="search-form">
