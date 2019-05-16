@@ -74,6 +74,7 @@ function ajax(reqUrl, msg, data) {
                 $("#search").val("");
             }
             $("#page").fadeTo("fast", 1);
+            $.page_reload();
             NProgress.done();
         },
         error: function () {
