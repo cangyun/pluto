@@ -37,9 +37,16 @@
             event.preventDefault();
         });
     };
+    let photo = function() {
+        layer.photos({
+            photos: ".pluto-content-single p",
+            anim: 5
+        });
+    };
     $.extend({
         page_reload: function () {
             collapse();
+            photo();
         }
     });
 
@@ -48,6 +55,7 @@
         goTopBox();
         scrollTop();
         collapse();
+        photo();
     });
 })();
 
