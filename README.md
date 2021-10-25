@@ -8,7 +8,7 @@
     <a href="https://www.gnu.org/licenses/"><img src="https://img.shields.io/badge/license-GNU-red.svg" /></a>
 </p>
 
-> :tada: is a WordPress theme
+> :tada: This is a WordPress theme
 
 ## Introduction
 
